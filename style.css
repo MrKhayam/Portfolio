@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'poppins';
+}
+nav{
+    width: 80%;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+nav .logo{
+    font-weight: 700;
+    font-size: 33px;
+    color: #1ABBED;
+    font-family: 'dancing script';
+}
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    font-weight: 400;
+}
+nav ul li p{
+    transition: all .3s;
+    cursor: pointer;
+}
+nav ul li p:hover{
+    color: #1ABBED;
+}
+nav ul li i{
+    font-size: 25px;
+    font-weight: 900;
+}
+.rightNav{
+    display: flex;
+}
+
+.listIcon i{
+    font-size: 23px;
+    font-weight: 700;
+    display: none;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    height: calc((100% - 100px));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftMain{
+    width: 50%;
+    height: 100%;
+}
+.leftMain h1{
+    margin-top: 100px;
+    font-size: 43px;
+}
+.leftMain h1 span{
+    color: #1ABBED;
+}
+.leftMain p{
+    width: 80%;
+    margin-top: 10px;
+    color: #7e7e7e;
+}
+.leftMain button{
+    padding: 14px 26px;
+    margin-top: 19px;
+    background: linear-gradient(135deg,#1ABBED,#10389C);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .3s;
+}
+.leftMain button:hover{
+    transform: translateY(-4px);
+}
+.rightMain{
+    width: 50%;
+    height: 100%;
+}
+.rightMain img{
+    width: 100%;
+    height: 100%;
+}
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.about h1{
+    font-size: 43px;
+    color: #1ABBED;
+    margin-bottom: 20px;
+}
+.about p{
+    width: 80%;
+    margin: auto;
+    font-weight: 20px;
+}
+.services{
+    margin-top: 80px;
+}
+.services h1{
+    text-align: center;
+    font-size: 43px;
+    color: #1ABBED;
+    margin-bottom: 30px;
+}
+.cards{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    text-align: center;
+
+}
+.cards .card{
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    width: 300px;
+    height: 390px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    transition: all.3s;
+    padding: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+.cards .card:hover{
+    background-color: #1ABBED;
+}
+.cards .card i{
+    font-size: 50px;
+    color: #1ABBED;
+    transition: all .3s;
+}
+.cards .card:hover {
+    color: white;
+}
+.cards .card:hover.card i{
+    color: white;
+}
+
+.cards .card button{
+    padding: 13px 73px;
+    background: linear-gradient(135deg,#1ABBED,#10389C);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .3s;
+    cursor: pointer;
+}
+.cards .card:hover.card button{
+    background: white;
+    color: black;
+}
+.card button:hover{
+    transform: translateY(-4px);
+}
+.contact{
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact h1{
+    color: #1ABBED;
+    font-size: 43px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    margin:60px auto;
+}
+form input,textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dadada;
+    margin-bottom: 20px;
+    font-family: 'poppins';
+}
+form button{
+    padding: 13px 0;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg,#10389C,#1ABBED);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+form{
+        width: 50%;
+        margin: auto;
+        padding: 0;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        background-color: #dadada;
+        color: #7e7e7e;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:650px) {
+    nav ul li{
+        display: none;
+    }
+    nav .rightNav .listIcon i{
+        display: block;
+    }
+    nav{
+        width: 100%;
+        padding: 0 14px;
+    }
+    .leftMain h1{
+        margin-top: 30px;
+    }
+    .leftMain p{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        height: calc(120% - 100px);
+    }
+    .leftMain{
+        width: 100%;
+        padding: 0 14px;
+    }
+    .rightMain{
+        width: 100%;
+        height: 200%;
+        padding: 0 14px;
+        overflow: hidden;
+    }
+    .about{
+        width: 100%;
+        padding: 0 14px;
+        margin-top: 30px;
+        text-align: left;
+    }
+    .about p {
+        width: 100%;
+        padding: 0 2px;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 40px;
+    }
+    form{
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+}
